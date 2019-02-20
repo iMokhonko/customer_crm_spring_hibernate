@@ -2,5 +2,5 @@
 **Technologies:** 
 1. Hibernate
 2. Spring Context 
-3. Spring MVC 
+3. Spring MVC + REST
 4. Spring AOP
