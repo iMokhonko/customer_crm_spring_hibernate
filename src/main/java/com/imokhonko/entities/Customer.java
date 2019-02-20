@@ -29,7 +29,7 @@ public class Customer {
     @Column(name = "email")
     @NotEmpty(message = "this field should not be empty")
     @Pattern(
-            regexp = "^(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\\-+)|([A-Za-z0-9]+\\.+)|([A-Za-z0-9]+\\++))*[A-Za-z0-9]+@((\\w+\\-+)|(\\w+\\.))*\\w{1,63}\\.[a-zA-Z]{2,6}$",
+            regexp = "^(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\\-+)|([A-Za-z0-9]+\\.+)|([A-Za-z0-9]+\\++))*[A-Za-z0-9]+@((\\w+-+)|(\\w+\\.))*\\w{1,63}\\.[a-zA-Z]{2,6}$",
             message = "incorrect email"
     )
     @Сensorship(forbiddenSubstrings = "KEK", message = "this word is not allowed")
@@ -73,6 +73,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" + "customerId=" + customerId + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", email='" + email + '\'' + '}';
+        return "CustomerException{" + "customerId=" + customerId + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", email='" + email + '\'' + '}';
     }
 }
