@@ -3,6 +3,7 @@ package com.imokhonko.rest;
 import com.imokhonko.entities.Customer;
 import com.imokhonko.exceptions.CustomerNotFoundException;
 import com.imokhonko.rest.exceptions.RestErrorResponse;
+import com.imokhonko.rest.filters.CustomerFilter;
 import com.imokhonko.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,13 +13,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping(value = "/api")
 public class CustomerRestController {
 
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping(value = "/customers", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers", method = RequestMethod.GET, produces = {"application/xml", "application/json", "text/html"})
     public List<Customer> getCustomers() {
         return customerService.getCustomers();
     }

@@ -6,15 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6231a6-5447-4840-9900-e6dfa870f91a" name="Default" comment="added Spring REST">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/exceptions/RestErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/exceptions/RestExceptionHandler.java" afterDir="false" />
+    <list default="true" id="1d6231a6-5447-4840-9900-e6dfa870f91a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/imokhonko/controllers/CustomerControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/imokhonko/dao/CustomerDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/imokhonko/entities/validationRules/CensorshipValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +36,17 @@
         <entry key="last-active-plugin-version" value="5.22.1" />
       </map>
     </option>
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sprhmbapp$com_imokhonko_in_sprhmbapp.ic" NAME="com.imokhonko in sprhmbapp Coverage Results" MODIFIED="1551731561347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.imokhonko.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sprhmbapp$CustomerDaoImplTest.ic" NAME="CustomerDaoImplTest Coverage Results" MODIFIED="1551731301581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.imokhonko.dao.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/sprhmbapp$CensorshipValidatorTest.ic" NAME="CensorshipValidatorTest Coverage Results" MODIFIED="1551732709066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.imokhonko.entities.validationRules.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -70,30 +86,15 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CustomerRestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding>
-                <element signature="e#125#126#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
-              </folding>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -109,6 +110,7 @@
         <option value="yet_unknown" />
         <option value="Aspect" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -130,27 +132,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/Сensorship.java" />
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/view/add-customer-form.jsp" />
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/view/edit-customer-form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/aop/AspectPointcuts.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/aop/CRMLoggingAspect.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/aop/CRMMethodExecutingTimeAspect.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/RestErrorResponse.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerExceptionNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/exceptions/RestExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/dao/CustomerDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/controllers/CustomerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/entities/validationRules/CensorshipValidatorTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -206,8 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,26 +253,37 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
+              <item name="validationRules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
@@ -286,6 +302,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -293,9 +311,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="imoh@gmail.com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -304,6 +324,14 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.imokhonko.entities.validationRules" />
+      <recent name="com.imokhonko.dao" />
+      <recent name="com.imokhonko.controllers" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\Coding\spring-hibernate-web-app\src\webapp" />
     </key>
@@ -320,9 +348,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CensorshipValidatorTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="CensorshipValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.entities.validationRules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko.entities.validationRules" />
+      <option name="MAIN_CLASS_NAME" value="com.imokhonko.entities.validationRules.CensorshipValidatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CensorshipValidatorTest.isValid_BadPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.entities.validationRules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko.entities.validationRules" />
+      <option name="MAIN_CLASS_NAME" value="com.imokhonko.entities.validationRules.CensorshipValidatorTest" />
+      <option name="METHOD_NAME" value="isValid_BadPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CensorshipValidatorTest.isValid_HappyPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.entities.validationRules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko.entities.validationRules" />
+      <option name="MAIN_CLASS_NAME" value="com.imokhonko.entities.validationRules.CensorshipValidatorTest" />
+      <option name="METHOD_NAME" value="isValid_HappyPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CustomerControllerTest.editCustomerForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.imokhonko.controllers.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="editCustomerForm" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -331,6 +451,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="com.imokhonko in sprhmbapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -435,6 +578,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 8" />
+      <item itemvalue="JUnit.com.imokhonko in sprhmbapp" />
+      <item itemvalue="JUnit.CustomerControllerTest.editCustomerForm" />
+      <item itemvalue="JUnit.CensorshipValidatorTest.isValid_HappyPath" />
+      <item itemvalue="JUnit.CensorshipValidatorTest.isValid_BadPath" />
+      <item itemvalue="JUnit.CensorshipValidatorTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CensorshipValidatorTest" />
+        <item itemvalue="JUnit.CensorshipValidatorTest.isValid_BadPath" />
+        <item itemvalue="JUnit.CensorshipValidatorTest.isValid_HappyPath" />
+        <item itemvalue="JUnit.CustomerControllerTest.editCustomerForm" />
+        <item itemvalue="JUnit.com.imokhonko in sprhmbapp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -450,7 +610,12 @@
       <workItem from="1550221527632" duration="2288000" />
       <workItem from="1550312348339" duration="12792000" />
       <workItem from="1550482134511" duration="5426000" />
-      <workItem from="1550668847308" duration="4283000" />
+      <workItem from="1550668847308" duration="4750000" />
+      <workItem from="1550756772379" duration="1721000" />
+      <workItem from="1550849059239" duration="1584000" />
+      <workItem from="1550857062974" duration="2831000" />
+      <workItem from="1551200957935" duration="19000" />
+      <workItem from="1551725271395" duration="5795000" />
     </task>
     <task id="LOCAL-00001" summary="added AOP">
       <created>1550486384125</created>
@@ -466,11 +631,50 @@
       <option name="project" value="LOCAL" />
       <updated>1550487096749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added Spring REST">
+      <created>1550674999435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550674999435</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 43m 29s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 45m 50s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 46m 28s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 46m 50s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 48m 54s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 50m 02s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 50m 35s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_HappyPath - 2019.03.04 at 22h 50m 50s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_HappyPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest_isValid_BadPath - 2019.03.04 at 22h 51m 26s.xml">
+      <configuration name="CensorshipValidatorTest.isValid_BadPath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CensorshipValidatorTest - 2019.03.04 at 22h 51m 51s.xml">
+      <configuration name="CensorshipValidatorTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44470000" />
+    <option name="totallyTimeSpent" value="56887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,6 +687,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="1" />
@@ -503,15 +708,15 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.39933994" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3630363" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23146747" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info anchor="right" id="Bean Validation" order="4" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="13" weight="0.32838285" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
@@ -520,7 +725,47 @@
       <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="12" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="13" weight="0.32838285" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="1" />
+      <window_info anchor="bottom" id="Application Servers" order="3" weight="0.32838285" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32838285" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3630363" />
+      <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32838285" />
+      <window_info anchor="bottom" id="TODO" order="17" weight="0.32838285" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.22768533" />
+      <window_info anchor="bottom" id="Find" order="13" weight="0.32838285" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
+      <window_info anchor="right" id="Database" order="7" weight="0.21028744" />
+      <window_info anchor="bottom" id="Message" order="12" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Debug" order="14" weight="0.4" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -560,27 +805,16 @@
     <MESSAGE value="added Spring REST" />
     <option name="LAST_COMMIT_MESSAGE" value="added Spring REST" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/../Spring/spr2/src/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-mvc.xml" />
-    <entry file="das://46935ada-96be-47fb-a68a-4a28db980435/database/students/schema/public/table/customer" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.862/solution-code-spring-mvc-CRUD-CRM-list-customers/WebContent/WEB-INF/spring-mvc-crud-demo-servlet.xml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.319/solution-code-spring-mvc-CRUD-CRM-list-customers/WebContent/WEB-INF/web.xml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.837/solution-code-spring-mvc-CRUD-CRM-list-customers/src/com/luv2code/springdemo/controller/CustomerController.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.790/solution-code-spring-mvc-CRUD-CRM-list-customers/src/com/luv2code/springdemo/dao/CustomerDAOImpl.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.000/solution-code-spring-mvc-CRUD-CRM-list-customers/src/com/luv2code/springdemo/entity/Customer.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.1.5.RELEASE/spring-orm-5.1.5.RELEASE.jar!/org/springframework/orm/hibernate5/LocalSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.434/solution-code-spring-mvc-CRUD-CRM-list-customers/WebContent/WEB-INF/spring-mvc-crud-demo-servlet.xml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.763/solution-code-spring-mvc-CRUD-CRM-list-customers/WebContent/WEB-INF/web.xml" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/09cb3250-68eb-4820-a7bc-2c039c9ebf6c/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -593,13 +827,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/404.jsp" />
-    <entry file="das://09cb3250-68eb-4820-a7bc-2c039c9ebf6c/schema/java/table/customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -625,20 +852,6 @@
     <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/Student.java" />
     <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/StudentImpl.java" />
     <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/rules/Censored.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/Сensorship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/IndexController.java" />
     <entry file="file://D:/../Spring/spr2/src/webapp/WEB-INF/view/add_student.jsp" />
     <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/add-customer-form.jsp">
@@ -652,9 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,19 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,33 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/aop/AspectPointcuts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Java/Spring/spring-aop/src/main/java/com/imokhonko/aop/LoggingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-551" />
@@ -752,55 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/aop/CRMMethodExecutingTimeAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="126" column="28" lean-forward="true" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,9 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,33 +947,190 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/RestController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/accept/ContentNegotiationManagerFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="79" column="48" lean-forward="true" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://09cb3250-68eb-4820-a7bc-2c039c9ebf6c/schema/java/table/customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/dao/CustomerDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1551731485355" expanded="true" signature="1063:1101" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/controllers/CustomerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding>
+            <element signature="e#1329#1330#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/aop/AspectPointcuts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/aop/CRMMethodExecutingTimeAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="31" column="118" selection-start-line="31" selection-start-column="118" selection-end-line="31" selection-end-column="118" />
+        <state relative-caret-position="67">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/Сensorship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/entities/validationRules/CensorshipValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="21" column="131" selection-start-line="21" selection-start-column="131" selection-end-line="21" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

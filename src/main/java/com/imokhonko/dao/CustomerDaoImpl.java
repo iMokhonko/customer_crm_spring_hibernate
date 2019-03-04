@@ -12,8 +12,12 @@ import java.util.List;
 @Repository
 public class CustomerDaoImpl implements CustomerDAO {
 
+    private final SessionFactory sessionFactory;
+
     @Autowired
-    private SessionFactory sessionFactory;
+    public CustomerDaoImpl(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
     public List<Customer> getCustomers() {
         Session session = sessionFactory.getCurrentSession();

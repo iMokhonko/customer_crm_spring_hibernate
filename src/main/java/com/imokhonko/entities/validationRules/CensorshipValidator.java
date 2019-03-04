@@ -5,8 +5,8 @@ import javax.validation.ConstraintValidatorContext;
 
 public class CensorshipValidator implements ConstraintValidator<Сensorship, String> {
 
-    String[] forbiddenSubstrings;
-    String errorMessage;
+    private String[] forbiddenSubstrings;
+    private String errorMessage;
 
     public void initialize(Сensorship constraintAnnotation) {
         forbiddenSubstrings = constraintAnnotation.forbiddenSubstrings();

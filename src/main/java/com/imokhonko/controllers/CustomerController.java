@@ -18,8 +18,12 @@ import java.util.List;
 @RequestMapping("/customer")
 public class CustomerController {
 
+    private final CustomerService customerService;
+
     @Autowired
-    private CustomerService customerService;
+    public CustomerController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String customersList(Model model) {

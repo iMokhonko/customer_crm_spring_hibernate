@@ -4,28 +4,35 @@ import com.imokhonko.entities.validationRules.Сensorship;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement(name = "customer")
 @Entity
 @Table(name = "customer")
 public class Customer {
 
+    @XmlAttribute
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id", updatable = false)
     private int customerId;
 
+    @XmlElement
     @Column(name = "first_name")
     @NotEmpty(message = "this field should not be empty")
     @Сensorship(forbiddenSubstrings = "KEK", message = "this word is not allowed")
     private String firstName;
 
+    @XmlElement
     @Column(name = "last_name")
     @NotEmpty(message = "this field should not be empty")
     @Сensorship(forbiddenSubstrings = "KEK", message = "this word is not allowed")
     private String lastName;
 
+    @XmlElement
     @Column(name = "email")
     @NotEmpty(message = "this field should not be empty")
     @Pattern(
