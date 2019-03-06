@@ -27,9 +27,11 @@ public class CustomerDaoImpl implements CustomerDAO {
         return customers;
     }
 
-    public void saveCustomer(Customer customer) {
+    public Customer saveCustomer(Customer customer) {
         Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(customer);
+
+        return customer;
     }
 
     public Customer getCustomer(int customerId) {

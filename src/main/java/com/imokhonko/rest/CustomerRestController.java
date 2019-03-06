@@ -16,10 +16,14 @@ import java.util.List;
 @RequestMapping(value = "/api")
 public class CustomerRestController {
 
-    @Autowired
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
-    @RequestMapping(value = "/customers", method = RequestMethod.GET, produces = {"application/xml", "application/json", "text/html"})
+    @Autowired
+    public CustomerRestController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
+
+    @RequestMapping(value = "/customers", method = RequestMethod.GET)
     public List<Customer> getCustomers() {
         return customerService.getCustomers();
     }
@@ -53,6 +57,7 @@ public class CustomerRestController {
     @RequestMapping(value = "/customers/{customerId}", method = RequestMethod.DELETE)
     public String deleteCustomer(@PathVariable int customerId) {
         Customer customer = customerService.getCustomer(customerId);
+
         if(customer == null) {
             throw new CustomerNotFoundException("Customer with id" + customerId + " is not exist!");
         }
