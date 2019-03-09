@@ -18,11 +18,13 @@ public class CustomerRestControllerTest {
 
     CustomerRestController customerRestController = null;
     CustomerService customerService = null;
+    Customer customer = null;
 
     @Before
     public void setUp() {
         customerService = mock(CustomerService.class);
         customerRestController = new CustomerRestController(customerService);
+        customer = mock(Customer.class);
     }
 
     @Test
@@ -74,8 +76,6 @@ public class CustomerRestControllerTest {
 
     @Test
     public void deleteCustomer_SuccessfullyDeleteCustomer() {
-        Customer customer = mock(Customer.class);
-
         when(customerService.getCustomer(0)).thenReturn(customer);
         verify(customerService, times(0)).deleteCustomer(0);
     }

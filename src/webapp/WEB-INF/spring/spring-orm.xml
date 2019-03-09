@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- Define Database DataSource / connection pool -->
+    <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${dataSource.driverClass}" />
+        <property name="jdbcUrl" value="${dataSource.jdbcUrl}" />
+        <property name="user" value="${dataSource.user}" />
+        <property name="password" value="${dataSource.password}" />
+
+        <property name="initialPoolSize" value = "${dataSource.initialPoolSize}" />
+
+        <!-- Connection pool properties for C3P0 -->
+        <property name="minPoolSize" value="${dataSource.minPoolSize}" />
+        <property name="maxPoolSize" value="${dataSource.maxPoolSize}" />
+        <property name="maxIdleTime" value="${dataSource.maxIdleTime}" />
+    </bean>
+
+    <!-- Setup Hibernate session factory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource" />
+        <property name="packagesToScan" value="com.imokhonko.entities" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Setup Hibernate transaction manager -->
+    <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Enable configuration of transactional behavior based on annotations -->
+    <tx:annotation-driven transaction-manager="txManager" />
+
+</beans>

@@ -6,15 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6231a6-5447-4840-9900-e6dfa870f91a" name="Default" comment="added tests for dao, controllers, validationRules packages">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java" afterDir="false" />
+    <list default="true" id="1d6231a6-5447-4840-9900-e6dfa870f91a" name="Default" comment="complete tests">
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/dataSource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-aop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-security.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,28 +85,15 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CustomerRestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-              <folding>
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerRestControllerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -133,9 +123,7 @@
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spingAppCtx.xml" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.862/solution-code-spring-mvc-CRUD-CRM-list-customers/WebContent/WEB-INF/spring-mvc-crud-demo-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/view/404.jsp" />
-        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/view/customers-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/EmailCensore.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/EmailCensoreValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/Сensorship.java" />
@@ -153,21 +141,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/exceptions/CustomerException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/exceptions/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java" />
-        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/dao/CustomerDaoImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/controllers/CustomerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/validationRules/CensorshipValidator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/entities/validationRules/CensorshipValidatorTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/entities/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/dao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/services/CustomerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java" />
+        <option value="D:/Java/Spring/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/view/customers-list.jsp" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/sprint-security.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-security.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-mvc" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-aop.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/root-context.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-orm.xml" />
+        <option value="$PROJECT_DIR$/src/webapp/WEB-INF/spring/dataSource.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -203,6 +202,11 @@
           <item name="sprhmbapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sprhmbapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -223,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,54 +264,6 @@
               <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imokhonko" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sprhmbapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customers_spring_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,6 +277,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -334,7 +290,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="imoh@gmail.com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -368,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in sprhmbapp">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -380,6 +336,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CustomerRestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sprhmbapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imokhonko.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.imokhonko.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.imokhonko.rest.CustomerRestControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -448,29 +427,6 @@
       <option name="PACKAGE_NAME" value="com.imokhonko.rest" />
       <option name="MAIN_CLASS_NAME" value="com.imokhonko.rest.CustomerRestControllerTest" />
       <option name="METHOD_NAME" value="handleBadStudentId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CustomerRestControllerTest.updateCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sprhmbapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imokhonko.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.imokhonko.rest" />
-      <option name="MAIN_CLASS_NAME" value="com.imokhonko.rest.CustomerRestControllerTest" />
-      <option name="METHOD_NAME" value="updateCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -594,19 +550,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8" />
-      <item itemvalue="JUnit.CustomerRestControllerTest.updateCustomer" />
       <item itemvalue="JUnit.CustomerRestControllerTest.deleteCustomer_SuccessfullyDeleteCustomer" />
       <item itemvalue="JUnit.CustomerRestControllerTest.deleteCustomer_CustomerWithGivenIdNotExist" />
       <item itemvalue="JUnit.CustomerRestControllerTest.handleBadStudentId" />
       <item itemvalue="JUnit.All in sprhmbapp" />
+      <item itemvalue="JUnit.CustomerRestControllerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerRestControllerTest" />
         <item itemvalue="JUnit.All in sprhmbapp" />
         <item itemvalue="JUnit.CustomerRestControllerTest.handleBadStudentId" />
         <item itemvalue="JUnit.CustomerRestControllerTest.deleteCustomer_SuccessfullyDeleteCustomer" />
         <item itemvalue="JUnit.CustomerRestControllerTest.deleteCustomer_CustomerWithGivenIdNotExist" />
-        <item itemvalue="JUnit.CustomerRestControllerTest.updateCustomer" />
       </list>
     </recent_temporary>
   </component>
@@ -630,7 +586,8 @@
       <workItem from="1550857062974" duration="2831000" />
       <workItem from="1551200957935" duration="19000" />
       <workItem from="1551725271395" duration="6274000" />
-      <workItem from="1551891833234" duration="2586000" />
+      <workItem from="1551891833234" duration="3502000" />
+      <workItem from="1552124680899" duration="11358000" />
     </task>
     <task id="LOCAL-00001" summary="added AOP">
       <created>1550486384125</created>
@@ -660,22 +617,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551732875510</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="complete tests">
+      <created>1551894658840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551894658840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerRestControllerTest_addCustomer - 2019.03.06 at 19h 29m 01s.xml">
-      <configuration name="CustomerRestControllerTest.addCustomer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerRestControllerTest_updateCustomer - 2019.03.06 at 19h 30m 21s.xml">
-      <configuration name="CustomerRestControllerTest.updateCustomer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerRestControllerTest_deleteCustomer_SuccessfullyDeleteCustomer - 2019.03.06 at 19h 33m 53s.xml">
-      <configuration name="CustomerRestControllerTest.deleteCustomer_SuccessfullyDeleteCustomer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerRestControllerTest_deleteCustomer_SuccessfullyDeleteCustomer - 2019.03.06 at 19h 34m 17s.xml">
-      <configuration name="CustomerRestControllerTest.deleteCustomer_SuccessfullyDeleteCustomer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerRestControllerTest_deleteCustomer_CustomerWithGivenIdNotExist - 2019.03.06 at 19h 39m 40s.xml">
       <configuration name="CustomerRestControllerTest.deleteCustomer_CustomerWithGivenIdNotExist" configurationId="JUnit" />
     </history-entry>
@@ -694,9 +646,21 @@
     <history-entry file="CustomerRestControllerTest_deleteCustomer_SuccessfullyDeleteCustomer - 2019.03.06 at 19h 45m 48s.xml">
       <configuration name="CustomerRestControllerTest.deleteCustomer_SuccessfullyDeleteCustomer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerRestControllerTest_handleBadStudentId - 2019.03.06 at 19h 48m 56s.xml">
+      <configuration name="CustomerRestControllerTest.handleBadStudentId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerRestControllerTest_handleBadStudentId - 2019.03.06 at 19h 49m 06s.xml">
+      <configuration name="CustomerRestControllerTest.handleBadStudentId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_sprhmbapp - 2019.03.06 at 19h 49m 41s.xml">
+      <configuration name="All in sprhmbapp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerRestControllerTest - 2019.03.06 at 19h 53m 27s.xml">
+      <configuration name="CustomerRestControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59952000" />
+    <option name="totallyTimeSpent" value="72226000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,12 +694,12 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3630363" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3729373" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info anchor="right" id="Bean Validation" order="4" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -754,14 +718,14 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="1" />
       <window_info anchor="bottom" id="Application Servers" order="3" weight="0.32838285" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32838285" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3630363" />
       <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info id="Capture Tool" order="6" />
@@ -770,23 +734,23 @@
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.32013202" />
-      <window_info anchor="bottom" id="TODO" order="17" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.22768533" />
-      <window_info anchor="bottom" id="Find" order="13" weight="0.32838285" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
       <window_info anchor="right" id="Database" order="6" weight="0.21028744" />
       <window_info anchor="bottom" id="Message" order="12" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="17" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="16" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="13" weight="0.32838285" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
+      <window_info anchor="bottom" id="Debug" order="14" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -827,7 +791,8 @@
     <MESSAGE value="added Spring REST" />
     <MESSAGE value="added tests for dao, controllers, validationRules packeges" />
     <MESSAGE value="added tests for dao, controllers, validationRules packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests for dao, controllers, validationRules packages" />
+    <MESSAGE value="complete tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,41 +804,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/404.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/customers-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/Pattern.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="32" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/rules/StudentNameValidator.java" />
-    <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/Student.java" />
-    <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/StudentImpl.java" />
-    <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/Entities/rules/Censored.java" />
-    <entry file="file://D:/../Spring/spr2/src/main/java/com/imokhonko/IndexController.java" />
-    <entry file="file://D:/../Spring/spr2/src/webapp/WEB-INF/view/add_student.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/add-customer-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/edit-customer-form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -964,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestBody.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -985,20 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/springAppCtx.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="79" column="48" lean-forward="true" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://09cb3250-68eb-4820-a7bc-2c039c9ebf6c/schema/java/table/customer">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1010,22 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
-          <folding>
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,16 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1091,10 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1551731485355" expanded="true" signature="1063:1101" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,10 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,9 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-415">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,9 +1026,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/filters/CustomerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.4.RELEASE/spring-security-config-5.1.4.RELEASE.jar!/org/springframework/security/config/spring-security-5.1.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="2081" column="12" selection-start-line="2081" selection-start-column="12" selection-end-line="2081" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/view/customers-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imokhonko/rest/CustomerRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="748">
           <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
           <folding>
             <element signature="e#732#733#0" expanded="true" />
@@ -1165,13 +1080,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/imokhonko/rest/CustomerRestControllerTest.java">
+    <entry file="file://D:/Java/Spring/spring-security/src/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+        <state relative-caret-position="270">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Java/Spring/spring-security/src/webapp/WEB-INF/spring/springAppCtx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Java/Spring/spring-security/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-aop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/spring-orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#862#886#0" expanded="true" />
+            <element signature="n#prop#0;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
+            <element signature="n#prop#1;n#props#0;n#property#2;n#bean#1;n#beans#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webapp/WEB-INF/spring/dataSource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1191,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (sprhmbapp)|Web</last-edited>
+          <last-edited>Spring (sprhmbapp)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
