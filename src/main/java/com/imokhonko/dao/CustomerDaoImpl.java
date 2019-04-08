@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Hibernate specific CustomerDAO implementation.
+ */
 @Repository
 public class CustomerDaoImpl implements CustomerDAO {
 
@@ -27,6 +30,12 @@ public class CustomerDaoImpl implements CustomerDAO {
         return customers;
     }
 
+    /**
+     * Saves the customer to db if customer_id is zero or null (not setted).
+     * Updates the customer if customer_id is not zero or null (is setted).
+     * @param customer customer entity to save or update
+     * @return saved customer
+     */
     public Customer saveCustomer(Customer customer) {
         Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(customer);

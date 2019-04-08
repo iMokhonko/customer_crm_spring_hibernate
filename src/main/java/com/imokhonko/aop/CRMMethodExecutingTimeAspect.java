@@ -8,6 +8,9 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+/**
+ * This aspect is used for logging method execution time for dao package.
+ */
 @Component
 @Aspect
 @Order(2)

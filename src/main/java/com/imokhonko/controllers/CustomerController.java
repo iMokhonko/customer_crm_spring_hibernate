@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Controller for basic CRUD operations for Customer entity.
+ */
 @Controller
 @RequestMapping("/customer")
 public class CustomerController {

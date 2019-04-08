@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * RestController for Customer entity.
+ * Responses in JSON format.
+ */
 @RestController
 @RequestMapping(value = "/api")
 public class CustomerRestController {
@@ -23,11 +27,20 @@ public class CustomerRestController {
         this.customerService = customerService;
     }
 
+    /**
+     * @return List of customers
+     */
     @RequestMapping(value = "/customers", method = RequestMethod.GET)
     public List<Customer> getCustomers() {
         return customerService.getCustomers();
     }
 
+    /**
+     * Retrieves customer with given id from database, if customer not found throws
+     * CustomerNotFoundException exception.
+     * @param customerId customer identified in database
+     * @return customer
+     */
     @RequestMapping(value = "/customers/{customerId}", method = RequestMethod.GET)
     public Customer getCustomersById(@PathVariable int customerId) {
         Customer customer = customerService.getCustomer(customerId);
@@ -39,6 +52,11 @@ public class CustomerRestController {
         return customer;
     }
 
+    /**
+     * Receives HTTP PUT request with JSON representation of customer and saves it to database.
+     * @param customer
+     * @return saved customer
+     */
     @RequestMapping(value = "/customers", method = RequestMethod.POST)
     public Customer addCustomer(@RequestBody Customer customer) {
         customer.setCustomerId(0);
@@ -47,6 +65,11 @@ public class CustomerRestController {
         return customer;
     }
 
+    /**
+     * Receives HTTP PUT request with JSON representation of customer and updates it to database.
+     * @param customer
+     * @return updated customer
+     */
     @RequestMapping(value = "/customers", method = RequestMethod.PUT)
     public Customer updateCustomer(@RequestBody Customer customer) {
         customerService.saveCustomer(customer);
@@ -54,6 +77,12 @@ public class CustomerRestController {
         return customer;
     }
 
+    /**
+     * Removes customer with given id from database, if customer not found throws
+     * CustomerNotFoundException exception.
+     * @param customerId customer identified in database
+     * @return String message
+     */
     @RequestMapping(value = "/customers/{customerId}", method = RequestMethod.DELETE)
     public String deleteCustomer(@PathVariable int customerId) {
         Customer customer = customerService.getCustomer(customerId);
@@ -67,6 +96,11 @@ public class CustomerRestController {
         return "Customer with id = " + customerId + " deleted!";
     }
 
+    /**
+     * Catches exceptions and send formatted HTTP response with code 404 (NOT_FOUND).
+     * @param exception occurred exception
+     * @return ResponseEntity
+     */
     @ExceptionHandler
     public ResponseEntity<RestErrorResponse> handleBadStudentId(CustomerNotFoundException exception) {
         RestErrorResponse errorResponse = new RestErrorResponse();

@@ -3,6 +3,10 @@ package com.imokhonko.entities.validationRules;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+/**
+ * Censorship validator implementation.
+ * @see Сensorship
+ */
 public class CensorshipValidator implements ConstraintValidator<Сensorship, String> {
 
     private String[] forbiddenSubstrings;
